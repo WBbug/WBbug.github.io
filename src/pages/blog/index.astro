@@ -54,7 +54,7 @@ const posts = (await getCollection("blog")).sort(
       ul a:hover img {
         box-shadow: var(--box-shadow);
       }
-      @media (max-width: 720px) {
+      @media (max-width: 820px) {
         ul {
           gap: 0.5em;
         }
@@ -74,7 +74,7 @@ const posts = (await getCollection("blog")).sort(
             posts.map((post) => (
               <li>
                 <a href={`/blog/${post.slug}/`}>
-                  <h4 class="title">{post.data.title}</h4>
+                  <h2 class="title">{post.data.title}</h2>
                 </a>
                 <time datetime={`${post.data.pubDate.toISOString()}`}>
                   {post.data.pubDate.toLocaleDateString("en", {
