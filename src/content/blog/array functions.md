@@ -1,8 +1,10 @@
 ---
-title: 'array functions'
-description: ''
-pubDate: '11 20 2022'
-tag: 
+title: Array functions
+pubDatetime: 2023-11-22
+tags:
+  - JavaScript
+description:
+  "array functions"
 ---
 
 | 名称    | 作用                                                         | 返回值               | 是否会修改原数组 |

@@ -1,8 +1,11 @@
 ---
-title: 'V8 garbage collector'
-description: ''
-pubDate: '11 20 2022'
-tag: 
+title: V8 garbage collector
+pubDatetime: 2023-11-22
+tags:
+  - JavaScript
+  - V8
+description:
+  "learn how V8 garbage collector run"
 ---
 
 ~~你我写的 js  都是垃圾~~
