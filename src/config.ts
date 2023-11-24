@@ -19,11 +19,3 @@ export const LOGO_IMAGE = {
   height: 46,
 };
 
-export const SOCIALS: SocialObjects = [
-  {
-    name: "Github",
-    href: "https://github.com/WBbug",
-    linkTitle: ` ${SITE.title} on Github`,
-    active: true,
-  },
-];
