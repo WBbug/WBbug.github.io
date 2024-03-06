@@ -1,6 +1,6 @@
 ---
 title: Angular data
-pubDatetime: 2023-11-22
+pubDatetime: 2024-03-06
 tags:
   - Angular
 description:
@@ -31,7 +31,7 @@ Zone.js 提供了一个全局区域，可以被 fork 和扩展以进一步封装
 
 在 Angular 中组件化是其中的一个核心，组件之间的嵌套会生成一个组件树，在组件生成的过程中 angular 会为每个组件生成一个变化检测器 changeDetector 用来记录组件的数据变化状态，由于一个 Component 会对应一个 changeDetector ，所以 changeDetector 同样也是一个树状结构的组织。
 
-### 我们在创建一个 Angular 应用 后，Angular 会同时创建一个  ApplicationRef  的实例，这个实例代表的就是我们当前创建的这个 Angular 应用的实例。 ApplicationRef 创建的同时，会订阅 ngZone 中的  onMicrotaskEmpty  事件，在所有的微任务完成后调用所有的视图的  detectChanges()  来执行变化检测。 
+我们在创建一个 Angular 应用 后，Angular 会同时创建一个  ApplicationRef  的实例，这个实例代表的就是我们当前创建的这个 Angular 应用的实例。 ApplicationRef 创建的同时，会订阅 ngZone 中的  onMicrotaskEmpty  事件，在所有的微任务完成后调用所有的视图的  detectChanges()  来执行变化检测。 
 
 [![image38b5d63098473a5d.md.png](https://img.picgo.net/2024/03/06/image38b5d63098473a5d.md.png)](https://www.picgo.net/image/image.SbRygk)
 
