@@ -63,3 +63,24 @@ description:
 - mask：定义遮罩，和裁剪内容
 - 使用 mask 属性，应用先前定义的 mask id
 
+### 描边动画
+
+利用 stroke-dash 的性质，让空白占据所有内容，然后让空白的部分变小，内容逐渐展示出来，达到动画的效果
+
+```css
+path {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 0;
+  animation: dash 2s linear 3s alternate infinite;
+}
+@keyframes dash {
+    from {
+        stroke-dashoffset: 500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+```
+
