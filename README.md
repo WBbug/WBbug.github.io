@@ -1,1 +1,1 @@
-A blog created with Astro 🧑‍🚀
+A blog created by Astro 🧑‍🚀
