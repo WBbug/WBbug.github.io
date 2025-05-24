@@ -12,26 +12,25 @@
 // };
 
 function myNew(fn, ...arg) {
-    const obj = {};
-    obj.__proto__ = fn.prototype;
-    const res = fn.apply(obj, arg);
-    return typeof res === 'object' ? res : obj;
-  }
-  
-  function myNew(fn, ...arg) {
-    if (typeof fn !== 'function') return;
-    const obj = {};
-    obj.__proto__ = Object.getPrototypeOf(fn);
-    res = fn.apply(obj, arg);
-    return typeof res === 'object' ? res : obj;
-  }
-  
-  function Parent(name) {
-    this.name = name;
-  }
-  
-  const p = myNew(Parent, 'alice');
-  // const p = new Parent('21')
-  
-  console.log(p);
-  
+  const obj = {};
+  obj.__proto__ = fn.prototype;
+  const res = fn.apply(obj, arg);
+  return typeof res === "object" ? res : obj;
+}
+
+function myNew(fn, ...arg) {
+  if (typeof fn !== "function") return;
+  const obj = {};
+  obj.__proto__ = Object.getPrototypeOf(fn);
+  res = fn.apply(obj, arg);
+  return typeof res === "object" ? res : obj;
+}
+
+function Parent(name) {
+  this.name = name;
+}
+
+const p = myNew(Parent, "alice");
+// const p = new Parent('21')
+
+console.log(p);

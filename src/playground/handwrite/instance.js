@@ -1,3 +1,15 @@
+const fn = new Function();
+  
+const res = instance(fn, Function);
+
+console.log(res);
+
+const myInstance = ()=>{
+  
+}
+
+
+
 function instance(obj, constructor) {
     if (typeof constructor !== 'function') {
       throw new TypeError("Right-hand side of 'instanceof' is not an object");
@@ -14,10 +26,4 @@ function instance(obj, constructor) {
     }
     return false;
   }
-  
-  const fn = new Function();
-  
-  const res = instance(fn, Function);
-  
-  console.log(res);
   

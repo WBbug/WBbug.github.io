@@ -1,17 +1,10 @@
-let inputNormal = document.getElementById('normal');
+function mydebounce (){
 
-function ajax(content) {
-  console.log('ajax request ' + content ,+new Date(),this)
 }
 
-
-
-​const ​throttleAjax = throttleSet(ajax,1000)
-// ​const ​throttleAjax = myDebounce(ajax,1000)
-
-inputNormal.addEventListener('keyup', function (e) {
-​   throttleAjax(e.target.value)
-})
+function myThrottle (){
+  
+}
 
 
 // debounce

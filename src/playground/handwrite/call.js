@@ -1,8 +1,8 @@
-// console.log()
-const obj = { name: 'david' };
-function callName(option) {
-  console.log(this.name, 'atr', option);
-}
+const obj = { name: "david" };
+function myCall(option) {}
+
+function myBind(option) {}
+
 // callName()
 // callName.call(obj);
 
@@ -23,25 +23,6 @@ function _call(context, fn, ...arg) {
   delete context[functionKey];
   return res;
 }
-// _call(obj,callName)
-// Function.prototype._call = function(context,...arg){
-//   context = context || window;
-
-//   const functionKey = Symbol();
-
-//   context[functionKey] = this;
-
-//   const res = context[functionKey](...arg);
-
-//   delete context[functionKey];
-//   return res;
-
-// }
-
-
-
-
-
 
 //**************** apply ********************
 function _apply(context, fn, arg) {
@@ -60,11 +41,6 @@ function _apply(context, fn, arg) {
   return res;
 }
 _apply(obj, callName);
-
-
-
-
-
 
 //**************** bind ********************
 
