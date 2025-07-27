@@ -18,14 +18,14 @@ const sortedPosts = getSortedPosts(posts);
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1 class="mr-2">Home</h1>
-      <div>writing...</div>
+      <h1 class="mr-2">主页</h1>
+      <div>写点东西ing</div>
     </section>
 
     <Hr />
 
     <section id="recent-posts">
-      <h2>Recent Posts</h2>
+      <h2>最近的文章</h2>
       <ul>
         {
           sortedPosts
@@ -44,7 +44,7 @@ const sortedPosts = getSortedPosts(posts);
       </ul>
       <div class="all-posts-btn-wrapper">
         <LinkButton href="/posts">
-          All Posts
+          所有文章
           <svg xmlns="http://www.w3.org/2000/svg"
             ><path
               d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
